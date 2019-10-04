@@ -1,12 +1,3 @@
-/*animacion*/
-@keyframes shake-logo{
-	0% { transform: rotate(0deg);}
-	25% { transform: rotate(5deg); }
-	50% { transform: rotate(-5deg); }
-	75% { transform: rotate(3deg); }
-	100% { transform: rotate(0deg); }
-} 
-
 /* General */
 a{
 	color: rgb(255, 255, 255);
@@ -31,14 +22,19 @@ footer {
 	margin: 5px;
 }
 
-h1,h2,h3,h4,h5,h6{
-	font-family: "Verdana", Sans-serif;
-	font-weight: 700;
+h2,h3,h4,h5,h6{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 400;
+	text-transform: uppercase;
 	margin: 5px;
 }
 
 h1{
 	font-size: 34px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin: 10px;
 }
 
 h2{
@@ -105,6 +101,13 @@ header ul li{
 
 header ul li a{
 	color: #fff; /* cambiar color despues*/
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    transition: color 0.5s;
+}
+
+header ul li a:hover{
+	color: #ff2121; /* cambiar color despues*/
 }
 
 #logomenu{
@@ -121,10 +124,11 @@ header ul li a{
 /* Anuncios | Titulo anuncios */
 
 #tituloAnuncios{
-	margin: 0px auto;
+	margin: 10px auto;
+	padding-bottom: 5px;
 	width: 800px;
 	text-align: center;
-	color: rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
 }
 
 /* Concierto | Div conciertos */
@@ -216,3 +220,12 @@ form input, form select, form textarea{
 #tablaDis th {
 	background-color: rgb(255, 153, 0);
 }
+
+/*animacion*/
+@keyframes shake-logo{
+	0% { transform: rotate(0deg);}
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(-5deg); }
+	75% { transform: rotate(3deg); }
+	100% { transform: rotate(0deg); }
+} 
