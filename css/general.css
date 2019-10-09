@@ -16,11 +16,6 @@ body{
 	color: rgb(255, 255, 255);
 }
 
-footer {
-	border-top: 2px solid rgb(226, 226, 226);
-	padding: 5px 0px;
-}
-
 h2,h3,h4,h5,h6{
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 400;
@@ -76,6 +71,26 @@ ul{
 	font-size: 14px;
 	font-weight: 300;
 	margin: 10px auto;
+}
+
+/* footer */
+
+footer {
+	border-top: 2px solid rgb(226, 226, 226);
+	padding: 5px 0px;
+}
+
+footer ul{
+	margin-right: 5px;
+}
+
+footer ul li{
+	float: right;
+	margin: 10px;
+}
+
+.fab{
+	color: #fff;
 }
 
 /* Barra nav */
