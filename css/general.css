@@ -206,36 +206,22 @@ form input, form select, form textarea{
 }
 
 /* Discografia | Tabla discografia */
-
-#tablaDis table {
-  border-collapse: collapse;
-  text-align: center;
+#albums{
+	display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
-#tablaDis  th, #tablaDis td {
-  border: 1px solid black;
-  font-family: "Verdana", Sans-serif; 
-}
+.album {
+    flex: 0 0 20%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+ } 
 
-#tablaDis td {
-	background-color: rgb(255, 204, 128);
-	text-align: center;
-}
-
-#tablaDis td img {
-	height: 50%;
-	width: 50%;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-#tablaDis td li {
-	text-align: left;
-}
-
-#tablaDis th {
-	background-color: rgb(255, 153, 0);
+.album img {
+	max-width: 100%;
 }
 
 /*animacion*/
