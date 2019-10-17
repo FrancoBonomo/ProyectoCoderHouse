@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* General */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Verdana", Sans-serif;
+  font-weight: 700; }
+
+article {
+  margin: 0px auto;
+  width: 800px; }
+
+body {
+  background-color: #0a0a0a;
+  color: white; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 10px 0px; }
+
+h1 {
+  font-size: 34px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 10px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 26px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 22px; }
+
+h6 {
+  font-size: 20px; }
+
+header {
+  background-color: black; }
+
+main {
+  padding: 5px;
+  margin: 54px 5px;
+  /* para cuando usas float */
+  overflow: hidden; }
+
+p {
+  font-size: 14px;
+  line-height: 18px; }
+
+ul {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 10px auto; }
+
+/* footer */
+footer {
+  border-top: 2px solid #e2e2e2;
+  padding: 5px 0px; }
+
+footer ul {
+  margin-right: 5px; }
+
+footer ul li {
+  float: right;
+  margin: 10px; }
+
+.fab {
+  color: #fff; }
+
+/* Barra nav */
+nav {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  background-color: black;
+  height: 56px;
+  width: 100%; }
+
+header ul {
+  margin-top: 25px;
+  margin-right: 5px; }
+
+header ul li {
+  float: right;
+  margin-right: 10px; }
+
+header ul li a {
+  color: #fff;
+  /* cambiar color despues*/
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  transition: color 0.5s;
+  font-size: 20px; }
+
+header ul li a:hover {
+  color: #ff2121;
+  /* cambiar color despues*/ }
+
+#logomenu {
+  float: left;
+  margin-left: 15px;
+  margin-top: 3px; }
+
+#logomenu:hover {
+  animation-name: shake-logo;
+  animation-duration: 0.75s; }
+
+/* Anuncios | Titulo anuncios */
+#tituloAnuncios {
+  margin: 10px auto;
+  padding-bottom: 5px;
+  width: 800px;
+  text-align: center;
+  color: white; }
+
+/* Concierto | Div conciertos */
+.botonComprar {
+  text-transform: uppercase;
+  margin: 2% auto;
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  border: solid 1px black;
+  transition: width 0.5s, height 0.5s; }
+
+.botonComprar:hover {
+  width: 150px;
+  height: 30px; }
+
+.divsConciertos {
+  width: 30%;
+  height: 40%;
+  border: 1px solid black;
+  margin: 2% 8%;
+  background: linear-gradient(to bottom, #ffba4c 0%, #ff920a 100%);
+  text-align: center; }
+
+#divConcierto1 {
+  float: left; }
+
+#divConcierto2 {
+  float: right; }
+
+/* Contacto | Formulario */
+form {
+  font-family: "Verdana", Sans-serif;
+  margin: 0 5%; }
+
+form div {
+  font-size: 12px;
+  margin-bottom: 5px; }
+
+form legend {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0; }
+
+form input, form select, form textarea {
+  margin-bottom: 15px; }
+
+/* Discografia | Tabla discografia */
+#albums {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-around; }
+
+.album {
+  position: relative;
+  flex: 0 0 20%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); }
+
+.album img {
+  max-width: 100%; }
+
+.divTituloAlbum {
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  background: linear-gradient(to bottom, black 0%, rgba(24, 24, 24, 0.6) 50%, rgba(255, 255, 255, 0) 100%); }
+
+.album h1 {
+  font-size: 26px;
+  margin-bottom: 5px; }
+
+.album h2 {
+  margin: 0px 10px 5px 0px;
+  font-size: 18px; }
+
+/*animacion*/
+@keyframes shake-logo {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(-5deg); }
+  75% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(0deg); } }
